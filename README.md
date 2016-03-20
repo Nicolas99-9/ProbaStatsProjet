@@ -6,7 +6,9 @@ Algorithm clusterises 500 companies using the price of their stocks.
 (Based on "Information-based Clustering paper" (Noam Slonim *, Gurinder Singh Atwal, Gašper Tkačik, and William Bialek , )
 
 Resultats :
+
 ---------------------------------------
+
 ('Numero du cluster : ', 0, ' Distance moyenne : ', 105.07825785183938)
 (u'Johnson Controls [JCI]', u'Consumer-Automobiles-Auto-Auto')
 (u'General Electric [GE]', u'Industrials-Capital-Industrial-Industrial')
