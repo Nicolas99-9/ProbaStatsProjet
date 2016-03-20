@@ -16,15 +16,22 @@ class file_loader:
     def __init__(self):
         pass
 
-    def load_file(self,fileName,isMatrix = False):
+    def load_file(self,fileName,isMatrix = False, dic = False):
         result = []
-        with codecs.open(fileName,"r",encoding='utf-8') as my_file:
-	    for line in my_file:
-                line= line.strip()
-                if(isMatrix):
-                    result.append(line.split())
-                else:
-                    result.append(line)
+        if(not dic):
+            with codecs.open(fileName,"r",encoding='utf-8') as my_file:
+	        for line in my_file:
+                    line= line.strip()
+                    if(isMatrix):
+                        result.append(line.split())
+                    else:
+                        result.append(line)
+        else:
+            result = {}
+            with codecs.open(fileName,"r",encoding='utf-8') as my_file:
+	        for line in my_file:
+                    line= line.strip()
+                    result[str(line.split()[0])]= line.split()[1]
         return result
 
 
