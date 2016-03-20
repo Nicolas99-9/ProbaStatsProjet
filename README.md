@@ -2,6 +2,7 @@
 
 
 Algorithm clusterises 500 companies using the price of their stocks.
+
 (Based on "Information-based Clustering paper" (Noam Slonim *, Gurinder Singh Atwal, Gašper Tkačik, and William Bialek , )
 
 Resultats :
